@@ -6,8 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VR Beginner/Scenes/Final/EscapeRoom.unity
-    guid: 0f290611f0f8be4419d06b71aba4e36a
+    path: Assets/Project/Ahmed/Ahmed.unity
+    guid: 6dbcd08fb28648448b7259c8d75f8b61
+  - enabled: 1
+    path: Assets/Project/Malak/level1.unity
+    guid: ba127544739365746bba345726aac588
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2ced8fd021faf9a47b8ae28a64d883dd, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f55107bc8f126944290fdd0e9b48e738, type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2ced8fd021faf9a47b8ae28a64d883dd,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f55107bc8f126944290fdd0e9b48e738,
+      type: 2}
