@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: ad82dd957fe69c149a6aa0170ab3dae0
   - enabled: 1
     path: Assets/Project/Ahmed/level1.unity
-    guid: 6ff8623388403f047a8b40145a4ec5cb
+    guid: c746bd40ee8c34342a1463f722bcbe07
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2ced8fd021faf9a47b8ae28a64d883dd,
       type: 2}
