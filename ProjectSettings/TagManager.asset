@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ignite
   - CinemachineTarget
+  - Pickable
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - Grabbable
+  - Pickable
   - Hands
   - Teleporter
   - NoHandCollide
