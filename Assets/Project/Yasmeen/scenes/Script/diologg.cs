@@ -1,18 +1,25 @@
+﻿using Fungus;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class diologg : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Flowchart Flowchart;
+    [SerializeField] string blockname;
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("player"))
+        {
+            Flowchart.ExecuteBlock(blockname); // تنفيذ الحوار عند دخول اللاعب المنطقة
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        if (other.CompareTag("player"))
+        {
+            Flowchart.StopBlock(blockname); // إيقاف الحوار عند خروج اللاعب من المنطقة
+        }
     }
 }
