@@ -13,16 +13,7 @@ public class DialogEx : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("entered");
             dialog.ExecuteBlock(exBlock);
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-
-        if (other.CompareTag("Player"))
-        {
-            dialog.ExecuteBlock(stopBlock);
         }
     }
 } 
