@@ -9,6 +9,15 @@ public class DialogEx : MonoBehaviour
     [SerializeField] string exBlock;
     [SerializeField] string stopBlock;
 
+    private void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            dialog.ExecuteBlock(exBlock);
+        }
+    }
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
