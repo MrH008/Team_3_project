@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupAndDrop : MonoBehaviour
+public class PickUp : MonoBehaviour
 {
     public Transform player; // Reference to the player or the object that will hold the item
     public Camera playerCamera; // Reference to the player's camera
@@ -43,15 +43,16 @@ public class PickupAndDrop : MonoBehaviour
         {
             Debug.Log("Raycast hit: " + hit.collider.name);
 
-            if (hit.collider != null && hit.collider.CompareTag("PickupItem"))
-            
-                (hit.collider.CompareTag("pc") ||
+            if (hit.collider != null && hit.collider.CompareTag("PickupItem") ||
+                hit.collider.CompareTag("pc") ||
                         hit.collider.CompareTag("monitor") ||
                         hit.collider.CompareTag("printer") ||
                         hit.collider.CompareTag("projector") ||
                         hit.collider.CompareTag("laptop") ||
-                        hit.collider.CompareTag("keybosrd"));
+                        hit.collider.CompareTag("keybosrd"))
+                        {
             Debug.Log("Picking up item: " + hit.collider.name);
+            }
 
             // If the raycast hits an item with the tag "PickupItem", pick it up
             currentItem = hit.collider.gameObject;
@@ -87,7 +88,7 @@ public class PickupAndDrop : MonoBehaviour
         {
             Debug.Log("Checking for pickup item, hit: " + hit.collider.name);
 
-            if (hit.collider != null && hit.collider.CompareTag("PickupItem"))
+            if (hit.collider != null && hit.collider.CompareTag("Pickable"))
             {
                 // Log a message if the player is looking at a pickup item
                 Debug.Log("Looking at a pickup item: " + hit.collider.name);
