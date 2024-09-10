@@ -43,7 +43,7 @@ public class PickUp : MonoBehaviour
         {
             Debug.Log("Raycast hit: " + hit.collider.name);
 
-            if (hit.collider != null && hit.collider.CompareTag("PickupItem") ||
+            if (hit.collider != null && hit.collider.CompareTag("Pickable") ||
                 hit.collider.CompareTag("pc") ||
                         hit.collider.CompareTag("monitor") ||
                         hit.collider.CompareTag("printer") ||
@@ -51,9 +51,8 @@ public class PickUp : MonoBehaviour
                         hit.collider.CompareTag("laptop") ||
                         hit.collider.CompareTag("keybosrd"))
                         {
-            Debug.Log("Picking up item: " + hit.collider.name);
-            }
-
+                    Debug.Log("Picking up item: " + hit.collider.name);
+          
             // If the raycast hits an item with the tag "PickupItem", pick it up
             currentItem = hit.collider.gameObject;
             currentItem.GetComponent<Rigidbody>().isKinematic = true; // Disable physics
@@ -61,6 +60,8 @@ public class PickUp : MonoBehaviour
 
             // Position it in front of the player and adjust the height
             currentItem.transform.localPosition = new Vector3(0, itemHeightOffset, 1); // Adjust Y position to raise the item
+            }
+
         }
         else
         {
