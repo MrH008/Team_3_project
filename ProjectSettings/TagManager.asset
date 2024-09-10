@@ -13,6 +13,8 @@ TagManager:
   - projector
   - laptop
   - keybosrd
+  - case
+  - case2
   layers:
   - Default
   - TransparentFX

@@ -12,38 +12,41 @@ public class DeskTrigger : MonoBehaviour
     [SerializeField] GameObject laptop;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Monitor"))
+        if (other.CompareTag("monitor"))
         {
             monitor.SetActive(true);
-            Destroy(other);
+            Destroy(other.gameObject);
+
         }
         else if (other.CompareTag("printer"))
         {
             printer.SetActive(true);
-            Destroy(other);
+            Destroy(other.gameObject);
+
         }
         else if (other.CompareTag("projector"))
         {
             projector.SetActive(true);
-            Destroy(other);
+            Destroy(other.gameObject);
+
         }
         else if (other.CompareTag("keybosrd"))
         {
             keybosrd.SetActive(true);
-            Destroy(other);
+            Destroy(other.gameObject);
+
         }
         else if (other.CompareTag("case2"))
         {
             case2.SetActive(true);
-            Destroy(other);
+            Destroy(other.gameObject);
+
         }
         else if (other.CompareTag("laptop"))
         {
             laptop.SetActive(true);
-            Destroy(other);
+            Destroy(other.gameObject);
         }
-
-
 
 
     }
