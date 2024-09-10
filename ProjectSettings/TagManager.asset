@@ -7,6 +7,12 @@ TagManager:
   - Ignite
   - CinemachineTarget
   - Pickable
+  - pc
+  - monitor
+  - printer
+  - projector
+  - laptop
+  - keybosrd
   layers:
   - Default
   - TransparentFX
@@ -14,7 +20,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - Pickable
   - Hands
