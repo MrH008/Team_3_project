@@ -12,7 +12,7 @@ TagManager:
   - printer
   - projector
   - laptop
-  - keybosrd
+  - keyboard
   layers:
   - Default
   - TransparentFX
