@@ -44,12 +44,12 @@ public class PickUp : MonoBehaviour
             Debug.Log("Raycast hit: " + hit.collider.name);
 
             if (hit.collider != null && hit.collider.CompareTag("Pickable") ||
-                hit.collider.CompareTag("pc") ||
+                hit.collider.CompareTag("case2") ||
                         hit.collider.CompareTag("monitor") ||
                         hit.collider.CompareTag("printer") ||
                         hit.collider.CompareTag("projector") ||
                         hit.collider.CompareTag("laptop") ||
-                        hit.collider.CompareTag("keyboard"))
+                        hit.collider.CompareTag("keybosrd"))
                         {
                     Debug.Log("Picking up item: " + hit.collider.name);
           
