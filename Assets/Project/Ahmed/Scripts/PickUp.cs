@@ -49,7 +49,7 @@ public class PickUp : MonoBehaviour
                         hit.collider.CompareTag("printer") ||
                         hit.collider.CompareTag("projector") ||
                         hit.collider.CompareTag("laptop") ||
-                        hit.collider.CompareTag("keybosrd"))
+                        hit.collider.CompareTag("keyboard"))
                         {
                     Debug.Log("Picking up item: " + hit.collider.name);
           
