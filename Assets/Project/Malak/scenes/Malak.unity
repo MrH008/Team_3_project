@@ -3880,7 +3880,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &316331266
 GameObject:
@@ -4537,6 +4537,7 @@ GameObject:
   - component: {fileID: 355089067}
   - component: {fileID: 355089069}
   - component: {fileID: 355089070}
+  - component: {fileID: 355089071}
   m_Layer: 0
   m_Name: Flowchart-case
   m_TagString: Untagged
@@ -4613,6 +4614,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 355089071}
   - {fileID: 355089057}
   - {fileID: 355089060}
   - {fileID: 355089061}
@@ -4653,7 +4655,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 355089058}
   selectedCommands:
-  - {fileID: 355089057}
+  - {fileID: 355089071}
   variables: []
   description: 
   stepPause: 0
@@ -4998,6 +5000,40 @@ MonoBehaviour:
   description: 
   character: {fileID: 2022616171}
   portrait: {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &355089071
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355089055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  storyText: "\uFEEA\uFEB4\uFEF4\uFEDC\uFEDF\u0627 \uFBFD\uFEE0\uFECB \uFE96\uFED3\uFEAE\uFECC\uFE97
+    \uFEAA\uFED8\uFEDF !\uFECA\uFE8B\u0627\u0631\n\uFE8E\uFEE3\uFEAA\uFEE8\uFECB
+    .\uFEA2\uFEF4\uFEA4\uFEBC\uFEDF\u0627 \uFE8E\uFEEC\uFEE7\uFE8E\uFEDC\uFEE3 \uFEF2\uFED3
+    \uFE8E\uFEEC\uFECC\uFEBF\u0648\u0648 \uFE8E\uFEEB\uFEAC\uFEA7\u0623 \uFEDA\uFEE8\uFEDC\uFEE4\uFEF3
+    \u060C\u0646\uFEF5\u0627 \n\u0649\uFEAE\uFEA7\u0623 \u0629\uFEAE\uFEE3 \u0643\uFEAA\uFECB\uFE8E\uFEB3\uFEF7
+    \uFE8E\uFEE8\uFEEB \u0646\uFEEE\uFEDB\uFE84\uFEB3\u0648 \uFE94\uFEF4\uFEDF\uFE8E\uFE98\uFEDF\u0627
+    \u0629\u0627\u062F\uFEF7\u0627 \uFEE6\uFECB \uFE9A\uFEA4\uFE91\u0627 \u060C\u0627\u064B\uFEB0\uFEEB\uFE8E\uFE9F
+    \u0646\uFEEE\uFEDC\uFE97 "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -6043,6 +6079,7 @@ GameObject:
   - component: {fileID: 410208902}
   - component: {fileID: 410208903}
   - component: {fileID: 410208904}
+  - component: {fileID: 410208905}
   m_Layer: 0
   m_Name: Flowchart-printer
   m_TagString: Untagged
@@ -6104,6 +6141,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 410208905}
   - {fileID: 410208892}
   - {fileID: 410208896}
   - {fileID: 410208897}
@@ -6142,7 +6180,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 410208893}
   selectedCommands:
-  - {fileID: 410208900}
+  - {fileID: 410208905}
   variables: []
   description: 
   stepPause: 0
@@ -6438,6 +6476,40 @@ MonoBehaviour:
   description: 
   character: {fileID: 2022616171}
   portrait: {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &410208905
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410208891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  storyText: "\uFEEA\uFECC\uFE91\uFE8E\uFEC4\uFEDF\u0627 \uFBFD\uFEE0\uFECB \uFE96\uFED3\uFEAE\uFECC\uFE97
+    \uFEAA\uFED8\uFEDF !\uFECA\uFE8B\u0627\u0631\n\uFE8E\uFEE3\uFEAA\uFEE8\uFECB
+    .\uFEA2\uFEF4\uFEA4\uFEBC\uFEDF\u0627 \uFE8E\uFEEC\uFEE7\uFE8E\uFEDC\uFEE3 \uFEF2\uFED3
+    \uFE8E\uFEEC\uFECC\uFEBF\u0648\u0648 \uFE8E\uFEEB\uFEAC\uFEA7\u0623 \uFEDA\uFEE8\uFEDC\uFEE4\uFEF3
+    \u060C\u0646\uFEF5\u0627 \n\u0649\uFEAE\uFEA7\u0623 \u0629\uFEAE\uFEE3 \u0643\uFEAA\uFECB\uFE8E\uFEB3\uFEF7
+    \uFE8E\uFEE8\uFEEB \u0646\uFEEE\uFEDB\uFE84\uFEB3\u0648 \uFE94\uFEF4\uFEDF\uFE8E\uFE98\uFEDF\u0627
+    \u0629\u0627\u062F\uFEF7\u0627 \uFEE6\uFECB \uFE9A\uFEA4\uFE91\u0627 \u060C\u0627\u064B\uFEB0\uFEEB\uFE8E\uFE9F
+    \u0646\uFEEE\uFEDC\uFE97 "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10532,7 +10604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1421261843}
+  selectedFlowchart: {fileID: 410208894}
 --- !u!4 &787641690
 Transform:
   m_ObjectHideFlags: 1
@@ -10739,7 +10811,7 @@ MonoBehaviour:
     \uFEF2\uFED3 "
   description: 
   character: {fileID: 2022616171}
-  portrait: {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10817,8 +10889,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 812283595}
+  selectedCommands:
+  - {fileID: 812283597}
   variables: []
   description: 
   stepPause: 0
@@ -10848,13 +10922,14 @@ MonoBehaviour:
     \n.\uFE8E\uFEEC\uFE98\uFED4\uFEF4\uFEC7\u0648 \uFEF2\uFEEB \uFE8E\uFEE3\u0648
     \uFE8E\uFEEC\uFEE3\u0627\uFEAA\uFEA8\uFE98\uFEB3\u0627 \uFE94\uFEF4\uFED4\uFEF4\uFEDB
     \uFEE6\uFECB \uFE8E\u064B\uFEC4\uFEF4\uFEB4\uFE91 \uFE8E\u064B\uFEA3\uFEAE\uFEB7
-    \uFEDA\uFEF4\uFEC4\uFECB\uFE84\uFEB3 \u060C\u0629\u0627\u062F\u0623 \n\uFEA2\uFEF4\uFEA4\uFEBC\uFEDF\u0627
-    \uFE8E\uFEEC\uFEE7\uFE8E\uFEDC\uFEE3 \uFEF2\uFED3 \uFE8E\uFEEC\uFECC\uFEC0\uFE97\u0648
+    \uFEDA\uFEF4\uFEC4\uFECB\uFE84\uFEB3 \u060C\u0629\u0627\u062F\u0623 \n\uFEDA\uFEDF\u0630
+    \uFEAA\uFECC\uFE91 \n\uFEA2\uFEF4\uFEA4\uFEBC\uFEDF\u0627 \uFE8E\uFEEC\uFEE7\uFE8E\uFEDC\uFEE3
+    \uFEF2\uFED3 \uFEDA\uFEB4\uFEF3\uFEAA\uFEDF\u0627 \uFBFD\uFEE0\uFECB \uFE8E\uFEEC\uFECC\uFEC0\uFE97\u0648
     \u0629\u0627\u062F\uFEF7\u0627 \uFEAC\uFEA7\uFE84\uFE97 \u0646\u0623 \uFEDA\uFEF4\uFEE0\uFECB
-    \u0646\uFEEE\uFEDC\uFEF4\uFEB3 \u060C\uFEDA\uFEDF\u0630 \uFEAA\uFECC\uFE91 "
+    \u0646\uFEEE\uFEDC\uFEF4\uFEB3 \u060C"
   description: 
   character: {fileID: 2022616171}
-  portrait: {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -10887,7 +10962,7 @@ MonoBehaviour:
     \u0629\u0627\u062F\uFEF7\u0627 \uFEE6\uFECB \uFE9A\uFEA4\uFE91\u0627 \u060C\uFE8E\uFEF4\uFEEB "
   description: 
   character: {fileID: 2022616171}
-  portrait: {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -13972,6 +14047,7 @@ GameObject:
   - component: {fileID: 1166968072}
   - component: {fileID: 1166968073}
   - component: {fileID: 1166968074}
+  - component: {fileID: 1166968075}
   m_Layer: 0
   m_Name: Flowchart-projector
   m_TagString: Untagged
@@ -14034,6 +14110,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1166968075}
   - {fileID: 1166968062}
   - {fileID: 1166968066}
   - {fileID: 1166968067}
@@ -14072,7 +14149,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1166968063}
   selectedCommands:
-  - {fileID: 1166968074}
+  - {fileID: 1166968075}
   variables: []
   description: 
   stepPause: 0
@@ -14377,6 +14454,40 @@ MonoBehaviour:
   description: 
   character: {fileID: 2022616171}
   portrait: {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1166968075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166968061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  storyText: "\u0636\uFEAE\uFECC\uFEDF\u0627 \u0632\uFE8E\uFEEC\uFE9F \uFBFD\uFEE0\uFECB
+    \uFE96\uFED3\uFEAE\uFECC\uFE97 \uFEAA\uFED8\uFEDF !\uFECA\uFE8B\u0627\u0631\n\uFE8E\uFEE3\uFEAA\uFEE8\uFECB
+    .\uFEA2\uFEF4\uFEA4\uFEBC\uFEDF\u0627 \uFE8E\uFEEC\uFEE7\uFE8E\uFEDC\uFEE3 \uFEF2\uFED3
+    \uFE8E\uFEEC\uFECC\uFEBF\u0648\u0648 \uFE8E\uFEEB\uFEAC\uFEA7\u0623 \uFEDA\uFEE8\uFEDC\uFEE4\uFEF3
+    \u060C\u0646\uFEF5\u0627 \n\u0649\uFEAE\uFEA7\u0623 \u0629\uFEAE\uFEE3 \u0643\uFEAA\uFECB\uFE8E\uFEB3\uFEF7
+    \uFE8E\uFEE8\uFEEB \u0646\uFEEE\uFEDB\uFE84\uFEB3\u0648 \uFE94\uFEF4\uFEDF\uFE8E\uFE98\uFEDF\u0627
+    \u0629\u0627\u062F\uFEF7\u0627 \uFEE6\uFECB \uFE9A\uFEA4\uFE91\u0627 \u060C\u0627\u064B\uFEB0\uFEEB\uFE8E\uFE9F
+    \u0646\uFEEE\uFEDC\uFE97 "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -16752,6 +16863,7 @@ GameObject:
   - component: {fileID: 1403936619}
   - component: {fileID: 1403936621}
   - component: {fileID: 1403936622}
+  - component: {fileID: 1403936623}
   m_Layer: 0
   m_Name: Flowchart-laptop
   m_TagString: Untagged
@@ -16788,8 +16900,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 19.79998
-    y: 78
+    x: 18.199982
+    y: 79.59999
     width: 75.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -16799,6 +16911,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1403936623}
   - {fileID: 1403936611}
   - {fileID: 1403936612}
   - {fileID: 1403936613}
@@ -16838,7 +16951,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1403936609}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1403936623}
   variables: []
   description: 
   stepPause: 0
@@ -17226,6 +17340,40 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1403936623
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403936607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  storyText: "\u0628\uFEEE\uFE97 \u0628\uFEFC\uFEDF\u0627 \uFBFD\uFEE0\uFECB \uFE96\uFED3\uFEAE\uFECC\uFE97
+    \uFEAA\uFED8\uFEDF !\uFECA\uFE8B\u0627\u0631\n\uFE8E\uFEE3\uFEAA\uFEE8\uFECB
+    .\uFEA2\uFEF4\uFEA4\uFEBC\uFEDF\u0627 \uFE8E\uFEEC\uFEE7\uFE8E\uFEDC\uFEE3 \uFEF2\uFED3
+    \uFE8E\uFEEC\uFECC\uFEBF\u0648\u0648 \uFE8E\uFEEB\uFEAC\uFEA7\u0623 \uFEDA\uFEE8\uFEDC\uFEE4\uFEF3
+    \u060C\u0646\uFEF5\u0627 \n\u0649\uFEAE\uFEA7\u0623 \u0629\uFEAE\uFEE3 \u0643\uFEAA\uFECB\uFE8E\uFEB3\uFEF7
+    \uFE8E\uFEE8\uFEEB \u0646\uFEEE\uFEDB\uFE84\uFEB3\u0648 \uFE94\uFEF4\uFEDF\uFE8E\uFE98\uFEDF\u0627
+    \u0629\u0627\u062F\uFEF7\u0627 \uFEE6\uFECB \uFE9A\uFEA4\uFE91\u0627 \u060C\u0627\u064B\uFEB0\uFEEB\uFE8E\uFE9F
+    \u0646\uFEEE\uFEDC\uFE97 "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &1414870139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17367,6 +17515,7 @@ GameObject:
   - component: {fileID: 1421261852}
   - component: {fileID: 1421261853}
   - component: {fileID: 1421261854}
+  - component: {fileID: 1421261855}
   m_Layer: 0
   m_Name: Flowchart-monitor
   m_TagString: Untagged
@@ -17444,6 +17593,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1421261855}
   - {fileID: 1421261841}
   - {fileID: 1421261844}
   - {fileID: 1421261845}
@@ -17484,7 +17634,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1421261842}
   selectedCommands:
-  - {fileID: 1421261854}
+  - {fileID: 1421261855}
   variables: []
   description: 
   stepPause: 0
@@ -17833,6 +17983,40 @@ MonoBehaviour:
     \uFE8E\u064B\uFE8C\uFEF4\uFEB7 "
   description: 
   character: {fileID: 2022616171}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1421261855
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421261839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  storyText: "\uFEEA\uFEB7\uFE8E\uFEB8\uFEDF\u0627 \uFBFD\uFEE0\uFECB \uFE96\uFED3\uFEAE\uFECC\uFE97
+    \uFEAA\uFED8\uFEDF !\uFECA\uFE8B\u0627\u0631\n\uFE8E\uFEE3\uFEAA\uFEE8\uFECB
+    .\uFEA2\uFEF4\uFEA4\uFEBC\uFEDF\u0627 \uFE8E\uFEEC\uFEE7\uFE8E\uFEDC\uFEE3 \uFEF2\uFED3
+    \uFE8E\uFEEC\uFECC\uFEBF\u0648\u0648 \uFE8E\uFEEB\uFEAC\uFEA7\u0623 \uFEDA\uFEE8\uFEDC\uFEE4\uFEF3
+    \u060C\u0646\uFEF5\u0627 \n\u0649\uFEAE\uFEA7\u0623 \u0629\uFEAE\uFEE3 \u0643\uFEAA\uFECB\uFE8E\uFEB3\uFEF7
+    \uFE8E\uFEE8\uFEEB \u0646\uFEEE\uFEDB\uFE84\uFEB3\u0648 \uFE94\uFEF4\uFEDF\uFE8E\uFE98\uFEDF\u0627
+    \u0629\u0627\u062F\uFEF7\u0627 \uFEE6\uFECB \uFE9A\uFEA4\uFE91\u0627 \u060C\u0627\u064B\uFEB0\uFEEB\uFE8E\uFE9F
+    \u0646\uFEEE\uFEDC\uFE97 "
+  description: 
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -24850,6 +25034,7 @@ GameObject:
   - component: {fileID: 1971052615}
   - component: {fileID: 1971052616}
   - component: {fileID: 1971052617}
+  - component: {fileID: 1971052618}
   m_Layer: 0
   m_Name: Flowchart-keyboard
   m_TagString: Untagged
@@ -24882,6 +25067,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1971052618}
   - {fileID: 1971052600}
   - {fileID: 1971052601}
   - {fileID: 1971052602}
@@ -24927,7 +25113,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1971052597}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1971052618}
   variables: []
   description: 
   stepPause: 0
@@ -25506,6 +25693,40 @@ MonoBehaviour:
   description: 
   character: {fileID: 2022616171}
   portrait: {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1971052618
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971052596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  storyText: "\u0633\u0648\uFE8E\uFEE4\uFEDF\u0627\u0648 \u062F\u0631\uFEEE\uFE92\uFEF4\uFEDC\uFEDF\u0627
+    \uFBFD\uFEE0\uFECB \uFE96\uFED3\uFEAE\uFECC\uFE97 \uFEAA\uFED8\uFEDF !\uFECA\uFE8B\u0627\u0631\n\uFE8E\uFEE3\uFEAA\uFEE8\uFECB
+    .\uFEA2\uFEF4\uFEA4\uFEBC\uFEDF\u0627 \uFE8E\uFEEC\uFEE7\uFE8E\uFEDC\uFEE3 \uFEF2\uFED3
+    \uFE8E\uFEEC\uFECC\uFEBF\u0648\u0648 \uFE8E\uFEEB\uFEAC\uFEA7\u0623 \uFEDA\uFEE8\uFEDC\uFEE4\uFEF3
+    \u060C\u0646\uFEF5\u0627 \n\u0649\uFEAE\uFEA7\u0623 \u0629\uFEAE\uFEE3 \u0643\uFEAA\uFECB\uFE8E\uFEB3\uFEF7
+    \uFE8E\uFEE8\uFEEB \u0646\uFEEE\uFEDB\uFE84\uFEB3\u0648 \uFE94\uFEF4\uFEDF\uFE8E\uFE98\uFEDF\u0627
+    \u0629\u0627\u062F\uFEF7\u0627 \uFEE6\uFECB \uFE9A\uFEA4\uFE91\u0627 \u060C\u0627\u064B\uFEB0\uFEEB\uFE8E\uFE9F
+    \u0646\uFEEE\uFEDC\uFE97 "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
