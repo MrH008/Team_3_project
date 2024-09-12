@@ -569,7 +569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1152768899851928, guid: f92a252e273fcb349b88813895ab0264, type: 3}
       propertyPath: m_TagString
-      value: Pickable
+      value: case2
       objectReference: {fileID: 0}
     - target: {fileID: 4025592166621246, guid: f92a252e273fcb349b88813895ab0264, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7702,7 +7702,7 @@ GameObject:
   - component: {fileID: 530307025}
   - component: {fileID: 530307026}
   m_Layer: 0
-  m_Name: area
+  m_Name: area5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14843,7 +14843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1676658108551014, guid: e46c83b5705b0a9429c8836bab32da4f, type: 3}
       propertyPath: m_TagString
-      value: Pickable
+      value: projector
       objectReference: {fileID: 0}
     - target: {fileID: 4693767298018312, guid: e46c83b5705b0a9429c8836bab32da4f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19917,7 +19917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438551673247200, guid: b62a967d3de8c1046995333b45ae13f4, type: 3}
       propertyPath: m_TagString
-      value: Pickable
+      value: keybosrd
       objectReference: {fileID: 0}
     - target: {fileID: 4723405714696990, guid: b62a967d3de8c1046995333b45ae13f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23418,7 +23418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1525819819956052, guid: f91c6e282a539734e94d481779bb454d, type: 3}
       propertyPath: m_TagString
-      value: Pickable
+      value: printer
       objectReference: {fileID: 0}
     - target: {fileID: 4072700928860574, guid: f91c6e282a539734e94d481779bb454d, type: 3}
       propertyPath: m_LocalPosition.x
