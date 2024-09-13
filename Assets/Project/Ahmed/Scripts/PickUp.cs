@@ -48,10 +48,10 @@ public class PickUp : MonoBehaviour
                         hit.collider.CompareTag("monitor") ||
                         hit.collider.CompareTag("printer") ||
                         hit.collider.CompareTag("projector") ||
-                        hit.collider.CompareTag("laptop") ||
+                        hit.collider.CompareTag("Laptop") ||
                         hit.collider.CompareTag("keybosrd"))
                         {
-                    Debug.Log("Picking up item: " + hit.collider.name);
+                    
           
             // If the raycast hits an item with the tag "PickupItem", pick it up
             currentItem = hit.collider.gameObject;

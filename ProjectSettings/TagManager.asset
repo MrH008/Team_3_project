@@ -15,6 +15,7 @@ TagManager:
   - keybosrd
   - case
   - case2
+  - Laptop
   layers:
   - Default
   - TransparentFX
