@@ -2682,7 +2682,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.69060296, z: -0, w: 0.7232342}
   m_LocalPosition: {x: 9.758607, y: -2.3070147, z: -7.4504266}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0.56108993}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 135171262}
@@ -3541,8 +3541,8 @@ Transform:
   m_GameObject: {fileID: 278699342}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.95571715, z: -0, w: 0.2942869}
-  m_LocalPosition: {x: -0.17, y: 0.49, z: 0.11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.21, y: 2.03, z: 0.12}
+  m_LocalScale: {x: 1.5678, y: 3.8947415, z: 1.4879}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1174151039}
@@ -4787,8 +4787,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 355089058}
-  selectedCommands:
-  - {fileID: 355089071}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -6314,8 +6313,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 410208893}
-  selectedCommands:
-  - {fileID: 410208905}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -10496,7 +10494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 410208894}
+  selectedFlowchart: {fileID: 1166968064}
 --- !u!4 &787641690
 Transform:
   m_ObjectHideFlags: 1
@@ -14063,8 +14061,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
-    y: 71.6
+    x: 68.6
+    y: 70.799995
     width: 75.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -14112,8 +14110,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1166968063}
-  selectedCommands:
-  - {fileID: 1166968075}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -24275,8 +24272,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1971052597}
-  selectedCommands:
-  - {fileID: 1971052618}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -24866,7 +24862,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1971052618
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

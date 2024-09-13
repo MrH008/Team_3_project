@@ -1,4 +1,4 @@
-using Fungus;
+﻿using Fungus;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,10 +9,11 @@ public class DialogEx : MonoBehaviour
     [SerializeField] string exBlock;
     [SerializeField] string stopBlock;
 
+    private bool isPlayerInRange = false; 
+
     private void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.E))
+        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             dialog.ExecuteBlock(exBlock);
         }
@@ -22,7 +23,15 @@ public class DialogEx : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            dialog.ExecuteBlock(exBlock);
+            isPlayerInRange = true; 
         }
     }
-} 
+
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            isPlayerInRange = false; 
+        }
+    }
+}
