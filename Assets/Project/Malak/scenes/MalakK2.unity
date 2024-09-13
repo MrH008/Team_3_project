@@ -1256,15 +1256,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4723405714696990, guid: dad94cf481e857d4189c95297be3840a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.571
+      value: -0.29
       objectReference: {fileID: 0}
     - target: {fileID: 4723405714696990, guid: dad94cf481e857d4189c95297be3840a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.791
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 4723405714696990, guid: dad94cf481e857d4189c95297be3840a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.591
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 4723405714696990, guid: dad94cf481e857d4189c95297be3840a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4880,7 +4880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 64.59999
+    x: 66.19998
     y: 66.799995
     width: 75.6
     height: 40
@@ -4930,8 +4930,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 355089058}
-  selectedCommands:
-  - {fileID: 355089070}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -6497,8 +6496,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 410208893}
-  selectedCommands:
-  - {fileID: 410208904}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -10827,7 +10825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 812283596}
+  selectedFlowchart: {fileID: 355089059}
 --- !u!4 &787641690
 Transform:
   m_ObjectHideFlags: 1
@@ -11946,6 +11944,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648223594033040858, guid: 84dbd9c93c3eb7d4bb01af96a8c2418b,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648223594033040858, guid: 84dbd9c93c3eb7d4bb01af96a8c2418b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 8888299018369387710, guid: 84dbd9c93c3eb7d4bb01af96a8c2418b,
         type: 3}
@@ -17134,8 +17142,7 @@ MonoBehaviour:
   saveSelection: 1
   localizationId: 
   showLineNumbers: 0
-  hideCommands:
-  - 
+  hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
 --- !u!114 &1403936611
