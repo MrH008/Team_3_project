@@ -99,7 +99,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 9747fd97a7c15064baeedd674a647cfa,
+  m_LightingDataAsset: {fileID: 112000000, guid: 9cc1467aaf05226469e3b838d0a2d04a,
     type: 2}
   m_LightingSettings: {fileID: 1693385418}
 --- !u!196 &4
@@ -450,7 +450,7 @@ MonoBehaviour:
   nameColor: {r: 0.13962269, g: 0.12407978, b: 0.12407978, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  - {fileID: 21300000, guid: ca9425e9b0026a14ca6e9bf50a4a2eb7, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -2929,7 +2929,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 14360c70f708f184fa79b2a3565e9c06, type: 3}
+  - {fileID: 21300000, guid: 4180fc42462954548840f18f92d5f352, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -9248,9 +9248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8960d194f5c8449b0a4db3ba2b6cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 2053731817}
-  exBlock: intro
-  stopBlock: stop
 --- !u!1 &1550072662
 GameObject:
   m_ObjectHideFlags: 0
@@ -10633,7 +10630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a607d2cee670a4b853c2ee3baa841c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: level1
+  sceneName: Malakkk2
 --- !u!65 &1710257286
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12821,6 +12818,7 @@ GameObject:
   - component: {fileID: 2053731818}
   - component: {fileID: 2053731821}
   - component: {fileID: 2053731822}
+  - component: {fileID: 2053731823}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -12841,7 +12839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 51.799988, y: 26.699982}
+  scrollPos: {x: 29.800018, y: -10.100006}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 372.8
@@ -12852,7 +12850,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 2053731819}
   selectedCommands: []
   variables: []
   description: 
@@ -12888,7 +12887,7 @@ MonoBehaviour:
     \uFEDA\uFEE0\uFEF4\uFEDF\u062F \u0646\uFEEE\uFEDB\uFEF7"
   description: 
   character: {fileID: 76048665}
-  portrait: {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  portrait: {fileID: 21300000, guid: ca9425e9b0026a14ca6e9bf50a4a2eb7, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12912,8 +12911,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 68.59999
-    y: 177.20001
+    x: 66.999985
+    y: 176.40001
     width: 75.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -12921,7 +12920,7 @@ MonoBehaviour:
   itemId: 0
   blockName: intro
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 2053731823}
   commandList:
   - {fileID: 2053731818}
   - {fileID: 2053731821}
@@ -12959,7 +12958,7 @@ MonoBehaviour:
   storyText: "!\uFEAA\uFECC\uFE98\uFEB4\uFEE3 \uFE8E\uFEE7\u0623 \u060C\uFEE2\uFECC\uFEE7"
   description: 
   character: {fileID: 660092719}
-  portrait: {fileID: 21300000, guid: 14360c70f708f184fa79b2a3565e9c06, type: 3}
+  portrait: {fileID: 21300000, guid: 4180fc42462954548840f18f92d5f352, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12992,7 +12991,7 @@ MonoBehaviour:
     !\uFECA\uFE8B\u0627\u0631"
   description: 
   character: {fileID: 76048665}
-  portrait: {fileID: 21300000, guid: bcbf08fd3a8e0174bbdc0890eba98631, type: 3}
+  portrait: {fileID: 21300000, guid: ca9425e9b0026a14ca6e9bf50a4a2eb7, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -13002,6 +13001,21 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &2053731823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053731816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 2053731819}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
 --- !u!1001 &2073555945
 PrefabInstance:
   m_ObjectHideFlags: 0
