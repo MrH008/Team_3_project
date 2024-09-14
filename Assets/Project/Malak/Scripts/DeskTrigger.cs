@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;  
+using TMPro;
+using Fungus;
 
 public class DeskTrigger : MonoBehaviour
 {
@@ -11,12 +12,14 @@ public class DeskTrigger : MonoBehaviour
     [SerializeField] GameObject keyboard;
     [SerializeField] GameObject case2;
 
-    [SerializeField] TMP_Text scoreText;  
-    private int score = 0;  
+    [SerializeField] TMP_Text scoreText;
+    [SerializeField] Flowchart dialog;  
+    [SerializeField] string ExBlock;  
+    private int score = 0;
 
     private void Start()
     {
-        UpdateScoreText();  
+        UpdateScoreText();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,7 +42,7 @@ public class DeskTrigger : MonoBehaviour
             Destroy(other.gameObject);
             IncreaseScore();
         }
-        else if (other.CompareTag("keybosrd"))
+        else if (other.CompareTag("keybosrd"))  
         {
             keyboard.SetActive(true);
             Destroy(other.gameObject);
@@ -53,14 +56,23 @@ public class DeskTrigger : MonoBehaviour
         }
     }
 
-    
     private void IncreaseScore()
     {
         score += 1;
-        UpdateScoreText(); 
+        UpdateScoreText();
+
+        if (score >= 5)  
+        {
+            EndLevel();
+        }
     }
 
-    
+    private void EndLevel()
+    {
+        dialog.ExecuteBlock(ExBlock); 
+        Debug.Log("Level Finished!");
+    }
+
     private void UpdateScoreText()
     {
         if (scoreText != null)
