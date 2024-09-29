@@ -7,6 +7,18 @@ TagManager:
   - Ignite
   - CinemachineTarget
   - Pickable
+<<<<<<< HEAD
+=======
+  - pc
+  - monitor
+  - printer
+  - projector
+  - laptop
+  - keybosrd
+  - case
+  - case2
+  - Laptop
+>>>>>>> origin/Malak
   layers:
   - Default
   - TransparentFX

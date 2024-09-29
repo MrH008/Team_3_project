@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Project/Yasmeen/scenes/ui.unity.meta
 guid: 3b154af8131982940841ccbee61ced92
+========
+guid: db68ec67e9032fb49bccd6984d4a17ca
+>>>>>>>> origin/Malak:Assets/Project/Yasmeen/scenes/Mian.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
