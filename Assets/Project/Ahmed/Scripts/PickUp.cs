@@ -11,6 +11,7 @@ public class PickUp : MonoBehaviour
     public float itemHeightOffset = 1.0f; // How much to raise the item when picked up
     private GameObject currentItem = null; // The currently held item
     public LayerMask ignoreLayers; // Layers to ignore in the raycast
+    public GameObject clicked;
 
     void Update()
     {
@@ -42,6 +43,7 @@ public class PickUp : MonoBehaviour
         if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, pickupRange, ~ignoreLayers))
         {
             Debug.Log("Raycast hit: " + hit.collider.name);
+           
 
             if (hit.collider != null && hit.collider.CompareTag("Pickable") ||
                 hit.collider.CompareTag("case2") ||
@@ -66,6 +68,7 @@ public class PickUp : MonoBehaviour
         else
         {
             Debug.Log("Raycast did not hit anything.");
+            
         }
     }
 
@@ -93,10 +96,12 @@ public class PickUp : MonoBehaviour
             {
                 // Log a message if the player is looking at a pickup item
                 Debug.Log("Looking at a pickup item: " + hit.collider.name);
+                clicked.SetActive(true);
             }
         }
         else
         {
+            clicked.SetActive(false);
             Debug.Log("Looking but no item detected within range.");
         }
     }
