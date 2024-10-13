@@ -8,7 +8,7 @@ public class DialogEx : MonoBehaviour
     [SerializeField] Flowchart dialog;
     [SerializeField] string exBlock;
     [SerializeField] string stopBlock;
-
+    [SerializeField] GameObject pressE;
     private bool isPlayerInRange = false; 
 
     private void Update()
@@ -24,6 +24,7 @@ public class DialogEx : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerInRange = true; 
+            pressE.SetActive(true);
         }
     }
 
@@ -32,6 +33,7 @@ public class DialogEx : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerInRange = false; 
+            pressE.SetActive(false);
         }
     }
 }
